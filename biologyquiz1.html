@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Thrillyverse Quizzes - Physics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Thrillyverse Quizzes</h1>
+    </header>
+
+    <div class="container">
+        <section id="intro-section" class="quiz-section active">
+            <h1>Welcome to the Biology Quiz!</h1>
+            <p class="chapter-info">Chapters Covered: Syllabus : genetics, Absorption by roots, transpiration, photosynthesis
+            <input type="text" id="student-name" placeholder="Your Name">
+            <button id="start-quiz-button">Start Quiz</button>
+            <div id="name-error" class="error-message"></div>
+        </section>
+
+        <section id="quiz-section" class="quiz-section">
+            <div class="header">
+                <div id="quiz-navigation" class="navigation-dots"></div>
+            </div>
+            <div id="question-card" class="question-card">
+                <p id="question-text"></p>
+                <img id="question-image" src="" alt="Question Image" style="display: none;">
+                <div id="choices" class="choices"></div>
+                <div class="quiz-controls">
+                    <button id="prev-button" class="nav-button">Previous</button>
+                    <button id="skip-button" class="nav-button skip-toggle">Skip</button>
+                    <button id="next-button" class="nav-button">Next</button>
+                </div>
+                <button id="submit-quiz-button" class="submit-button">Submit Quiz</button>
+            </div>
+        </section>
+
+        <section id="results-section" class="quiz-section">
+            <h1>Quiz Results</h1>
+
+            <div id="results-content-to-capture">
+                <p>Student: <strong id="results-student-name"></strong></p>
+                <p>Total Marks Earned: <strong id="total-marks-earned"></strong> / <strong id="total-possible-marks"></strong></p>
+                <p>Percentage: <strong id="percentage-score"></strong>%</p>
+
+                <div id="performance-badge" class="performance-badge"></div>
+
+                <div class="chart-container">
+                    <canvas id="topic-breakdown-chart"></canvas>
+                </div>
+            </div>
+            <h2>Detailed Review</h2>
+            <div id="review-cards-container" class="review-cards-container">
+                </div>
+            <div class="results-actions">
+                <button id="screenshot-button" class="submit-button">Take Screenshot</button>
+                <button id="reattempt-quiz-button" class="submit-button">Re-attempt Quiz</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; Thrillyverse All rights reserved 2025</p>
+        <p>Made for Materialverse Premium Students with ❤️ by <a href="https://www.instagram.com/thrillyverse/" target="_blank" rel="noopener noreferrer">@thrillyverse</a></p>
+    </footer>
+
+    <script src="biology1.js"></script>
+</body>
+</html>
