@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Quiz Questions Data ---
- // --- Quiz Questions Data ---
+ // --- Quiz Questions Data --
 const questions = [
   // Genetics
   {
